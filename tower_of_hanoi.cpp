@@ -1,5 +1,4 @@
 // 👳Tamplate made by Aadil Mugal
-// this program also calculate total number of minimal moves or time to complete the task if one move takes 1 second
 #include <iostream>
 #include <cmath>
 
@@ -24,12 +23,19 @@ void time(int c){
 	h = c/60/60 - (y*12*30*24 + m*30*24 + d*24);
 	i = c/60 - (y*12*30*24*60 + m*30*24*60 + d*24*60 + h*60);
 	s = c - (y*12*30*24*60*60 + m*30*24*60*60 + d*24*60*60 + h*60*60 + i*60);
-	cout<<"Years : "<<y<<endl;
-	cout<<"Months : "<<m<<endl;
-	cout<<"Days : "<<d<<endl;
-	cout<<"Hours : "<<h<<endl;
-	cout<<"Minutes : "<<i<<endl;
-	cout<<"Seconds : "<<s<<endl;
+	cout<<"<---[ Total time require ]--->"<<endl;
+	if(y)
+		cout<<"Years : "<<y<<endl;
+	if(m)
+		cout<<"Months : "<<m<<endl;
+	if(d)
+		cout<<"Days : "<<d<<endl;
+	if(h)
+		cout<<"Hours : "<<h<<endl;
+	if(i)
+		cout<<"Minutes : "<<i<<endl;
+	if(s)
+		cout<<"Seconds : "<<s<<endl;
 }
 
 int main(int count,const char* list[]){
